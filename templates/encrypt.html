@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Encrypted Text</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg">
+    <div class="container">
+        <h1>Encrypted Text</h1>
+        <div class="alert alert-info" role="alert">
+            {{ encrypted_text }}
+        </div>
+        <a href="/" class="btn btn-primary">Go Back</a>
+    </div>
+</body>
+</html>
